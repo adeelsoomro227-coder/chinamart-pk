@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A9 Camera Details | ChinaMart PK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background: #f9f9f9; padding: 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; text-decoration: none; color: #1a1a1a; font-weight: bold; }
+        
+        /* Main Container */
+        .product-container { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 20px; 
+            border-radius: 15px; 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 30px; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+        }
+
+        /* Image Gallery Top */
+        .image-section { flex: 1; min-width: 300px; }
+        .main-img { width: 100%; height: 400px; object-fit: contain; border: 1px solid #eee; border-radius: 10px; }
+        .thumb-group { display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap; }
+        .thumb { width: 65px; height: 65px; object-fit: cover; border: 1px solid #ddd; cursor: pointer; border-radius: 5px; }
+        .thumb:hover { border-color: #25d366; }
+
+        /* Product Info */
+        .details-section { flex: 1.2; min-width: 300px; }
+        .p-title { font-size: 22px; margin-bottom: 10px; color: #333; line-height: 1.4; }
+        .p-price { font-size: 28px; color: #e74c3c; font-weight: bold; margin-bottom: 20px; }
+        .variant-title { font-weight: bold; margin-bottom: 10px; display: block; }
+        .color-group { display: flex; gap: 10px; margin-bottom: 25px; }
+        .color-thumb { width: 50px; height: 50px; border-radius: 50%; border: 2px solid #eee; cursor: pointer; object-fit: cover; }
+        
+        /* WhatsApp Button */
+        .wa-btn { background: #25d366; color: white; text-decoration: none; padding: 15px; display: block; border-radius: 8px; font-weight: bold; text-align: center; font-size: 18px; transition: 0.3s; }
+        .wa-btn:hover { background: #128c7e; }
+
+        /* Description */
+        .description { width: 100%; margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px; }
+        .description h3 { margin-bottom: 15px; color: #333; }
+        .description p { line-height: 1.8; color: #666; white-space: pre-line; }
+
+        /* Showcase Gallery */
+        .extra-gallery { width: 100%; margin-top: 40px; border-top: 2px solid #f4f4f4; padding-top: 30px; }
+        .extra-gallery h3 { text-align: center; margin-bottom: 30px; font-size: 24px; color: #333; }
+        .gallery-stack { display: flex; flex-direction: column; gap: 20px; align-items: center; }
+        .gallery-stack img { width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+
+        /* NEW: Reviews Section Styling */
+        .reviews-section { width: 100%; margin-top: 50px; border-top: 2px solid #f4f4f4; padding-top: 30px; }
+        .review-card { background: #fafafa; padding: 20px; border-radius: 10px; margin-bottom: 15px; border: 1px solid #eee; }
+        .stars { color: #f1c40f; font-size: 18px; margin-bottom: 5px; }
+        .reviewer-name { font-weight: bold; font-size: 16px; display: block; margin-bottom: 5px; }
+        .review-text { color: #555; font-size: 14px; line-height: 1.5; }
+        
+        .review-form { background: #fff; padding: 25px; border: 1px dashed #25d366; border-radius: 10px; margin-top: 30px; }
+        .review-form h4 { margin-bottom: 15px; color: #333; }
+        .review-form input, .review-form textarea, .review-form select { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; outline: none; }
+        .submit-review { background: #1a1a1a; color: white; border: none; padding: 12px 30px; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+        .submit-review:hover { background: #333; }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-link">← Back to Shop</a>
+
+    <div class="product-container">
+        <!-- Top Section: Images & Order -->
+        <div class="image-section">
+            <img src="https://www.shop.markaz.app/api/img?url=https%3A%2F%2Fcbu01.alicdn.com%2Fimg%2Fibank%2FO1CN01sMdV7T1JyTF110snG_!!1043921097-0-cib.jpg" id="mainView" class="main-img">
+            <div class="thumb-group">
+                <img src="https://www.shop.markaz.app/api/img?url=https%3A%2F%2Fcbu01.alicdn.com%2Fimg%2Fibank%2FO1CN01sMdV7T1JyTF110snG_!!1043921097-0-cib.jpg" class="thumb" onclick="changeImage(this.src)">
+                <img src="https://www.shop.markaz.app/api/img?url=https%3A%2F%2Fcbu01.alicdn.com%2Fimg%2Fibank%2F16438100940_2035813438.jpg" class="thumb" onclick="changeImage(this.src)">
+                <img src="https://www.shop.markaz.app/api/img?url=https%3A%2F%2Fcbu01.alicdn.com%2Fimg%2Fibank%2FO1CN0155flyN1JyTF5gi2Bj_!!1043921097-0-cib.jpg" class="thumb" onclick="changeImage(this.src)">
+                <img src="https://www.shop.markaz.app/api/img?url=https%3A%2F%2Fcbu01.alicdn.com%2Fimg%2Fibank%2FO1CN01DdGdWc2GNQmgGdyXq_!!2207495089003-0-cib.jpg" class="thumb" onclick="changeImage(this.src)">
+            </div>
+        </div>
+
+        <div class="details-section">
+            <h1 class="p-title">A9 Surveillance WiFi Camera - HD Night Vision & Remote Viewing</h1>
+            <div class="p-price">Rs. 1,899</div>
+
+            <span class="variant-title">Available Colors:</span>
+            <div class="color-group">
+                <img src="https://www.shop.markaz.app/api/img?url=https%3A%2F%2Fcbu01.alicdn.com%2Fimg%2Fibank%2FO1CN01sMdV7T1JyTF110snG_!!1043921097-0-cib.jpg" class="color-thumb" onclick="changeImage(this.src)">
+                <img src="https://www.shop.markaz.app/api/img?url=https%3A%2F%2Fcbu01.alicdn.com%2Fimg%2Fibank%2FO1CN01Le8lgi1JyTF5ghIRB_!!1043921097-0-cib.jpg" class="color-thumb" onclick="changeImage(this.src)">
+            </div>
+
+            <a href="https://wa.me/923021802668?text=Assalam-o-Alaikum, I want to order A9 Camera" class="wa-btn">Order via WhatsApp</a>
+            <p style="margin-top:15px; font-size:12px; color:#888; text-align:center;">🚚 Fast Cash on Delivery All Over Pakistan</p>
+        </div>
+
+        <!-- Description Section -->
+        <div class="description">
+            <h3>Product Description</h3>
+            <p>
+                - Software APP: V720
+                - Supports WiFi remote viewing (Mobile se kahin bhi dekhin)
+                - Can take photos & save recordings
+                - HD live streaming with wide angle
+                - Battery lasts about 1–2 hours (Direct power support)
+                - Easy to operate & hidden design
+                - Night vision enabled for dark rooms
+            </p>
+        </div>
+
+        <!-- Showcase Gallery -->
+        <div class="extra-gallery">
+            <h3>Product Detailed Showcase</h3>
+            <div class="gallery-stack">
+                <img src="https://www.shop.markaz.app/api/img?url=https%3A%2F%2Fcbu01.alicdn.com%2Fimg%2Fibank%2F16438100940_2035813438.jpg">
+                <img src="https://www.shop.markaz.app/api/img?url=https%3A%2F%2Fcbu01.alicdn.com%2Fimg%2Fibank%2FO1CN0155flyN1JyTF5gi2Bj_!!1043921097-0-cib.jpg">
+                <img src="https://www.shop.markaz.app/api/img?url=https%3A%2F%2Fcbu01.alicdn.com%2Fimg%2Fibank%2FO1CN01DdGdWc2GNQmgGdyXq_!!2207495089003-0-cib.jpg">
+            </div>
+        </div>
+
+        <!-- NEW: Customer Reviews Section -->
+        <div class="reviews-section">
+            <h3 style="text-align: center; margin-bottom: 30px;">Customer Reviews ⭐⭐⭐⭐⭐</h3>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <span class="reviewer-name">Adeel (Rawalpindi)</span>
+                <p class="review-text">Bohat hi chota aur zabardast camera hai. Night vision bilkul clear hai aur mobile par asani se connect ho jata hai.</p>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <span class="reviewer-name">Irfan Sheikh (Faisalabad)</span>
+                <p class="review-text">Best product for security. Office ke liye liya tha, result bohot ala hai. Shukriya ChinaMart PK!</p>
+            </div>
+
+            <!-- Review Form -->
+            <div class="review-form">
+                <h4>Write a Review</h4>
+                <form action="https://formspree.io/f/mbdkglpl" method="POST">
+                    <input type="text" name="name" placeholder="Aapka Naam" required>
+                    <select name="rating">
+                        <option value="5 Stars">5 Stars ⭐⭐⭐⭐⭐</option>
+                        <option value="4 Stars">4 Stars ⭐⭐⭐⭐</option>
+                        <option value="3 Stars">3 Stars ⭐⭐⭐</option>
+                    </select>
+                    <textarea name="review" rows="4" placeholder="Apna Review yahan likhein..." required></textarea>
+                    <button type="submit" class="submit-review">Submit Review</button>
+                </form>
+            </div>
+        </div>
+        
+    </div> <!-- Final End of Product Container -->
+
+    <footer style="text-align: center; padding: 40px; color: #888; font-size: 14px;">
+        &copy; 2024 ChinaMart PK - Trusted Affiliate Store
+    </footer>
+
+    <script>
+        function changeImage(src) { document.getElementById('mainView').src = src; }
+    </script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W9 Ultra 2 Details | ChinaMart PK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background: #f9f9f9; padding: 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; text-decoration: none; color: #1a1a1a; font-weight: bold; }
+        
+        .product-container { 
+            max-width: 1100px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 25px; 
+            border-radius: 15px; 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 30px; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+        }
+
+        /* Gallery Section */
+        .image-section { flex: 1; min-width: 350px; }
+        .main-img { width: 100%; height: 450px; object-fit: contain; border: 1px solid #eee; border-radius: 12px; background: #fff; }
+        .thumb-group { display: flex; gap: 8px; margin-top: 15px; flex-wrap: wrap; }
+        .thumb { width: 65px; height: 65px; object-fit: cover; border: 1px solid #ddd; cursor: pointer; border-radius: 5px; }
+
+        /* Details Section */
+        .details-section { flex: 1.2; min-width: 320px; }
+        .p-title { font-size: 24px; margin-bottom: 15px; color: #333; line-height: 1.4; font-weight: 600; }
+        .p-price { font-size: 32px; color: #e74c3c; font-weight: bold; margin-bottom: 20px; }
+
+        /* NEW: Color Buttons (Screenshot Style) */
+        .variant-title { font-size: 16px; font-weight: bold; margin-bottom: 15px; display: block; color: #333; }
+        .color-group { display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; }
+        
+        .color-btn {
+            padding: 10px 25px;
+            border: 1.5px solid #d1d5db;
+            border-radius: 10px;
+            background-color: white;
+            cursor: pointer;
+            font-size: 15px;
+            color: #374151;
+            transition: 0.2s;
+            font-weight: 500;
+        }
+
+        /* Active State (Green Theme) */
+        .color-btn.active {
+            border-color: #00c04b;
+            background-color: #f0fff4;
+            color: #008a35;
+            box-shadow: 0 0 0 1px #00c04b;
+        }
+
+        .wa-btn { background: #25d366; color: white; text-decoration: none; padding: 18px; display: block; border-radius: 8px; font-weight: bold; text-align: center; font-size: 20px; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3); margin-top: 20px; }
+        
+        /* Description and Reviews */
+        .description { width: 100%; margin-top: 40px; border-top: 2px solid #f4f4f4; padding-top: 30px; }
+        .description ul { list-style: none; padding-left: 0; }
+        .description li { margin-bottom: 12px; line-height: 1.6; color: #444; position: relative; padding-left: 25px; }
+        .description li::before { content: "•"; color: #25d366; font-size: 25px; position: absolute; left: 0; top: -5px; }
+
+        .gallery-stack { display: flex; flex-direction: column; gap: 20px; align-items: center; margin-top: 40px; }
+        .gallery-stack img { width: 100%; max-width: 800px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-link">← Back to Shop</a>
+
+    <div class="product-container">
+        <!-- Main Image -->
+        <div class="image-section">
+            <img src="https://media.public.markaz.app/public/products/775374045876-1.webp" id="mainView" class="main-img">
+            <div class="thumb-group">
+                <img src="https://media.public.markaz.app/public/products/775374045876-1.webp" class="thumb" onclick="changeImage(this.src)">
+                <img src="https://media.public.markaz.app/public/products/775374045876-2.webp" class="thumb" onclick="changeImage(this.src)">
+                <img src="https://media.public.markaz.app/public/products/775374045876-3.webp" class="thumb" onclick="changeImage(this.src)">
+                <img src="https://media.public.markaz.app/public/products/775374045876-4.webp" class="thumb" onclick="changeImage(this.src)">
+            </div>
+        </div>
+
+        <div class="details-section">
+            <h1 class="p-title">W9 Ultra 2 Smart Watch - Series 9/10 Bluetooth Calling & Remote Camera</h1>
+            <div class="p-price">Rs. 2,499</div>
+
+            <!-- Color Selection Buttons -->
+            <span class="variant-title">Color</span>
+            <div class="color-group">
+                <button class="color-btn active" onclick="selectColor(this, 'https://media.public.markaz.app/public/products/775374045876-1.webp')">Grey</button>
+                <button class="color-btn" onclick="selectColor(this, 'https://media.public.markaz.app/public/products/775374045876-5.webp')">Pink</button>
+                <button class="color-btn" onclick="selectColor(this, 'https://media.public.markaz.app/public/products/775374045876-2.webp')">Black</button>
+                <button class="color-btn" onclick="selectColor(this, 'https://media.public.markaz.app/public/products/775374045876-3.webp')">Orange</button>
+                <button class="color-btn" onclick="selectColor(this, 'https://media.public.markaz.app/public/products/775374045876-4.webp')">White</button>
+            </div>
+
+            <a href="https://wa.me/923021802668?text=Assalam-o-Alaikum, I want to order the W9 Ultra 2 Smart Watch" class="wa-btn">Order on WhatsApp</a>
+            <p style="margin-top:15px; font-size:13px; color:#888; text-align:center;">📦 Fast Cash on Delivery All Over Pakistan</p>
+        </div>
+
+        <!-- Product Description -->
+        <div class="description">
+            <h3>Key Features</h3>
+            <ul>
+                <li><strong>Bluetooth Calling:</strong> Make and receive calls directly from your watch.</li>
+                <li><strong>HD Infinite Screen:</strong> 2.2-inch full touch display with Always On feature.</li>
+                <li><strong>Sports & Health:</strong> Heart rate, SpO2 monitor, and multiple sports tracking.</li>
+                <li><strong>Remote Camera:</strong> Shake your wrist to take photos from your phone.</li>
+                <li><strong>Wireless Charging:</strong> Magnetic fast charging support.</li>
+            </ul>
+        </div>
+
+        <!-- Extra Images Stack -->
+        <div class="gallery-stack">
+            <img src="https://media.public.markaz.app/public/products/775374045876-1.webp">
+            <img src="https://media.public.markaz.app/public/products/775374045876-3.webp">
+            <img src="https://media.public.markaz.app/public/products/775374045876-5.webp">
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 50px; color: #888;">&copy; 2024 ChinaMart PK</footer>
+
+    <script>
+        // Function to handle color selection and image change
+        function selectColor(element, imageSrc) {
+            // Sab buttons se 'active' class remove karein
+            let buttons = document.querySelectorAll('.color-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Click kiye gaye button par 'active' class lagayein
+            element.classList.add('active');
+
+            // Main photo update karein
+            document.getElementById('mainView').src = imageSrc;
+        }
+
+        // Function for thumbnails
+        function changeImage(src) {
+            document.getElementById('mainView').src = src;
+        }
+    </script>
+</body>
+</html>
